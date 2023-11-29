@@ -1,79 +1,79 @@
 {
-	"uuid": "ec1dfa80-89d9-4eaf-a56d-033dcf4f455d",
-	"lastMigration": 29,
-	"name": "KingRPS",
-	"endpointPrefix": "",
-	"latency": 0,
-	"port": 3000,
-	"hostname": "",
-	"folders": [],
-	"routes": [
-		{
-			"uuid": "b4826f03-da12-46c2-a8d7-a9ec193b545b",
-			"type": "http",
-			"documentation": "",
-			"method": "get",
-			"endpoint": "",
-			"responses": [
-				{
-					"uuid": "7ab478da-89e2-46e9-bd37-a94b1dca381e",
-					"body": "{\n  \"message\": \"Hello\"\n}",
-					"latency": 0,
-					"statusCode": 200,
-					"label": "",
-					"headers": [],
-					"bodyType": "INLINE",
-					"filePath": "",
-					"databucketID": "",
-					"sendFileAsBody": false,
-					"rules": [],
-					"rulesOperator": "OR",
-					"disableTemplating": false,
-					"fallbackTo404": false,
-					"default": true,
-					"crudKey": "id"
-				}
-			],
-			"enabled": true,
-			"responseMode": null
-		}
-	],
-	"rootChildren": [
-		{
-			"type": "route",
-			"uuid": "b4826f03-da12-46c2-a8d7-a9ec193b545b"
-		}
-	],
-	"proxyMode": false,
-	"proxyHost": "",
-	"proxyRemovePrefix": false,
-	"tlsOptions": {
-		"enabled": false,
-		"type": "CERT",
-		"pfxPath": "",
-		"certPath": "",
-		"keyPath": "",
-		"caPath": "",
-		"passphrase": ""
-	},
-	"cors": true,
-	"headers": [
-		{
-			"key": "Content-Type",
-			"value": "application/json"
-		}
-	],
-	"proxyReqHeaders": [
-		{
-			"key": "",
-			"value": ""
-		}
-	],
-	"proxyResHeaders": [
-		{
-			"key": "",
-			"value": ""
-		}
-	],
-	"data": []
+  "uuid": "ec1dfa80-89d9-4eaf-a56d-033dcf4f455d",
+  "lastMigration": 29,
+  "name": "KingRPS",
+  "endpointPrefix": "",
+  "latency": 0,
+  "port": 3000,
+  "hostname": "",
+  "folders": [],
+  "routes": [
+    {
+      "uuid": "b4826f03-da12-46c2-a8d7-a9ec193b545b",
+      "type": "http",
+      "documentation": "取得五攝家怪獸",
+      "method": "get",
+      "endpoint": "cards/starter-pack",
+      "responses": [
+        {
+          "uuid": "7ab478da-89e2-46e9-bd37-a94b1dca381e",
+          "body": "{\n  \"status\": \"1\",\n  \"error\": null,\n  \"result\": [\n    {\n      \"id\": \"1\",\n      \"name\": \"Hello\",\n      \"type\": \"Hello\",\n      \"health\": \"Hello\",\n      \"attack\": \"Hello\",\n      \"description\": \"Hello\",\n      \"image_url\": \"Hello\"\n    },\n    {\n      \"id\": \"2\",\n      \"name\": \"Hello\",\n      \"type\": \"Hello\",\n      \"health\": \"Hello\",\n      \"attack\": \"Hello\",\n      \"description\": \"Hello\",\n      \"image_url\": \"Hello\"\n    },\n    {\n      \"id\": \"3\",\n      \"name\": \"Hello\",\n      \"type\": \"Hello\",\n      \"health\": \"Hello\",\n      \"attack\": \"Hello\",\n      \"description\": \"Hello\",\n      \"image_url\": \"Hello\"\n    },\n    {\n      \"id\": \"4\",\n      \"name\": \"Hello\",\n      \"type\": \"Hello\",\n      \"health\": \"Hello\",\n      \"attack\": \"Hello\",\n      \"description\": \"Hello\",\n      \"image_url\": \"Hello\"\n    },\n    {\n      \"id\": \"5\",\n      \"name\": \"Hello\",\n      \"type\": \"Hello\",\n      \"health\": \"Hello\",\n      \"attack\": \"Hello\",\n      \"description\": \"Hello\",\n      \"image_url\": \"Hello\"\n    }\n  ]\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true,
+          "crudKey": "id"
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
+    }
+  ],
+  "rootChildren": [
+    {
+      "type": "route",
+      "uuid": "b4826f03-da12-46c2-a8d7-a9ec193b545b"
+    }
+  ],
+  "proxyMode": false,
+  "proxyHost": "",
+  "proxyRemovePrefix": false,
+  "tlsOptions": {
+    "enabled": false,
+    "type": "CERT",
+    "pfxPath": "",
+    "certPath": "",
+    "keyPath": "",
+    "caPath": "",
+    "passphrase": ""
+  },
+  "cors": true,
+  "headers": [
+    {
+      "key": "Content-Type",
+      "value": "application/json"
+    }
+  ],
+  "proxyReqHeaders": [
+    {
+      "key": "",
+      "value": ""
+    }
+  ],
+  "proxyResHeaders": [
+    {
+      "key": "",
+      "value": ""
+    }
+  ],
+  "data": []
 }
